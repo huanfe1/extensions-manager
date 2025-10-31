@@ -1,0 +1,85 @@
+{
+    "extensionDescription": {
+        "description": "Extension description",
+        "message": "Extensions Manager - Manage your Chrome extensions easily"
+    },
+    "extensionName": {
+        "description": "Extension name",
+        "message": "Extensions Manager"
+    },
+    "appTitle": {
+        "description": "Application title",
+        "message": "Extensions Manager"
+    },
+    "refreshList": {
+        "description": "Refresh list button tooltip",
+        "message": "Refresh list"
+    },
+    "openDetails": {
+        "description": "Open details button text",
+        "message": "Open Details"
+    },
+    "uninstallExtension": {
+        "description": "Uninstall extension button text",
+        "message": "Uninstall Extension"
+    },
+    "loading": {
+        "description": "Loading text",
+        "message": "Loading..."
+    },
+    "retry": {
+        "description": "Retry button text",
+        "message": "Retry"
+    },
+    "noExtensionsFound": {
+        "description": "No extensions found message",
+        "message": "No other extensions found"
+    },
+    "failedToLoadExtensions": {
+        "description": "Failed to load extensions error",
+        "message": "Failed to load extensions list"
+    },
+    "chromeApiUnavailable": {
+        "description": "Chrome API unavailable error",
+        "message": "Chrome API is unavailable. Please ensure you are running in a Chrome extension environment."
+    },
+    "managementApiUnavailable": {
+        "description": "Management API unavailable error",
+        "message": "Management API is unavailable. Please ensure: 1. Extension has been reloaded 2. manifest.json includes management permission 3. Check console for more information"
+    },
+    "failedToToggleExtension": {
+        "description": "Failed to toggle extension error with placeholder",
+        "message": "Unable to $1 \"$2\""
+    },
+    "enable": {
+        "description": "Enable action",
+        "message": "enable"
+    },
+    "disable": {
+        "description": "Disable action",
+        "message": "disable"
+    },
+    "extension": {
+        "description": "Extension default name",
+        "message": "Extension"
+    },
+    "failedToUninstallExtension": {
+        "description": "Failed to uninstall extension error with placeholder",
+        "message": "Unable to uninstall extension \"$1\""
+    },
+    "displayErrorInfo": {
+        "message": "Error occur"
+    },
+    "displayErrorDescription": {
+        "message": "Sorry, something went wrong while loading the page."
+    },
+    "displayErrorDetailsInfo": {
+        "message": "Error details:"
+    },
+    "displayErrorUnknownErrorInfo": {
+        "message": "Unknown error"
+    },
+    "displayErrorReset": {
+        "message": "Run Again"
+    }
+}

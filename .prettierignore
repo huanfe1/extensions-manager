@@ -1,0 +1,17 @@
+dist
+packages/**/dist
+chrome-extension/dist
+dist-zip
+node_modules
+.turbo
+coverage
+build
+reports
+*.md
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+.env*
+.DS_Store
+.idea
+.vscode

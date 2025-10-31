@@ -1,0 +1,85 @@
+{
+    "extensionDescription": {
+        "description": "Extension description",
+        "message": "扩展管理器 - 轻松管理你的 Chrome 扩展"
+    },
+    "extensionName": {
+        "description": "Extension name",
+        "message": "扩展管理器"
+    },
+    "appTitle": {
+        "description": "Application title",
+        "message": "扩展管理器"
+    },
+    "refreshList": {
+        "description": "Refresh list button tooltip",
+        "message": "刷新列表"
+    },
+    "openDetails": {
+        "description": "Open details button text",
+        "message": "打开详情页"
+    },
+    "uninstallExtension": {
+        "description": "Uninstall extension button text",
+        "message": "卸载扩展"
+    },
+    "loading": {
+        "description": "Loading text",
+        "message": "加载中..."
+    },
+    "retry": {
+        "description": "Retry button text",
+        "message": "重试"
+    },
+    "noExtensionsFound": {
+        "description": "No extensions found message",
+        "message": "没有找到其他扩展"
+    },
+    "failedToLoadExtensions": {
+        "description": "Failed to load extensions error",
+        "message": "无法加载扩展列表"
+    },
+    "chromeApiUnavailable": {
+        "description": "Chrome API unavailable error",
+        "message": "Chrome API 不可用。请确保在 Chrome 扩展环境中运行。"
+    },
+    "managementApiUnavailable": {
+        "description": "Management API unavailable error",
+        "message": "Management API 不可用。请确保：1. 扩展已重新加载 2. manifest.json 中包含 management 权限 3. 查看控制台获取更多信息"
+    },
+    "failedToToggleExtension": {
+        "description": "Failed to toggle extension error with placeholder",
+        "message": "无法$1 \"$2\""
+    },
+    "enable": {
+        "description": "Enable action",
+        "message": "启用"
+    },
+    "disable": {
+        "description": "Disable action",
+        "message": "禁用"
+    },
+    "extension": {
+        "description": "Extension default name",
+        "message": "扩展"
+    },
+    "failedToUninstallExtension": {
+        "description": "Failed to uninstall extension error with placeholder",
+        "message": "无法卸载扩展 \"$1\""
+    },
+    "displayErrorInfo": {
+        "message": "发生错误"
+    },
+    "displayErrorDescription": {
+        "message": "抱歉，加载页面时出现问题。"
+    },
+    "displayErrorDetailsInfo": {
+        "message": "错误详情："
+    },
+    "displayErrorUnknownErrorInfo": {
+        "message": "未知错误"
+    },
+    "displayErrorReset": {
+        "message": "重新运行"
+    }
+}

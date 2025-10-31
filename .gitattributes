@@ -1,0 +1,13 @@
+* text eol=lf
+
+# Keep images/binaries untouched
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.gif -text
+*.webp -text
+*.ico -text
+*.zip -text
+*.svg -text
+* text=auto eol=lf
+*.sh text eol=lf
