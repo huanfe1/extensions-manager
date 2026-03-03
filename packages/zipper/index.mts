@@ -6,7 +6,7 @@ import { zipBundle } from './lib/index.js';
 
 const rootDir = resolve(import.meta.dirname, '..', '..', '..');
 const pkg = JSON.parse(readFileSync(resolve(rootDir, 'package.json'), 'utf-8'));
-const fileName = `${pkg.name}-${pkg.version}`;
+const fileName = `${pkg.name}`;
 
 await zipBundle({
     distDirectory: resolve(rootDir, 'dist'),
