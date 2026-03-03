@@ -15,6 +15,10 @@
         "description": "Refresh list button tooltip",
         "message": "刷新列表"
     },
+    "goToStore": {
+        "description": "Go to Chrome Web Store button tooltip",
+        "message": "前往商店"
+    },
     "openDetails": {
         "description": "Open details button text",
         "message": "打开详情页"

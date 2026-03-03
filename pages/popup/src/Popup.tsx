@@ -29,6 +29,10 @@ const Popup = () => {
         refreshRef.current?.();
     };
 
+    const handleGoToStore = () => {
+        chrome.tabs.create({ url: 'https://chromewebstore.google.com/category/extensions' });
+    };
+
     return (
         <div className={cn('App min-w-[400px]', isSystemLight ? 'bg-slate-50' : 'bg-gray-800')}>
             <header className={cn('App-header border-b px-4 py-3', isSystemLight ? 'border-gray-200 bg-white' : 'border-gray-600 bg-gray-900')}>
@@ -47,6 +51,16 @@ const Popup = () => {
                             title={t('refreshList')}
                         >
                             <i className="i-mingcute-refresh-3-line text-xl"></i>
+                        </button>
+                        <button
+                            onClick={handleGoToStore}
+                            className={cn(
+                                'flex h-8 w-8 items-center justify-center rounded-lg transition-all hover:scale-110 active:scale-95',
+                                isSystemLight ? 'text-gray-600 hover:bg-gray-100 hover:text-gray-900' : 'text-gray-400 hover:bg-gray-700 hover:text-gray-200',
+                            )}
+                            title={t('goToStore')}
+                        >
+                            <i className="i-mingcute-shopping-bag-3-line text-xl"></i>
                         </button>
                     </div>
                 </div>

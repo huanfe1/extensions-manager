@@ -1,6 +1,6 @@
 {
     "name": "extensions-manager",
-    "version": "0.5.0",
+    "version": "0.0.1",
     "description": "Extensions Manager - Chrome Extension",
     "license": "MIT",
     "private": true,
@@ -35,7 +35,8 @@
         "copy-env": "bash bash-scripts/copy_env.sh",
         "set-global-env": "bash bash-scripts/set_global_env.sh",
         "module-manager": "pnpm -F module-manager start",
-        "postinstall": "pnpm copy-env"
+        "postinstall": "pnpm copy-env",
+        "postversion": "pnpm update-version && git add -A && git commit --amend --no-edit --allow-empty && git push && git push --tags"
     },
     "dependencies": {
         "react": "^19.1.0",

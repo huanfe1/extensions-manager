@@ -1,0 +1,43 @@
+name: Publish Release
+
+on:
+    push:
+        tags:
+            - "v*"
+
+permissions:
+    contents: write
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+            - uses: pnpm/action-setup@v4
+              with:
+                  version: 10.11.0
+                  run_install: false
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 22
+                  cache: "pnpm"
+
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
+
+            - name: Build Chrome extension
+              run: pnpm run zip
+
+            - name: Publish Release
+              run: npx changelogithub
+              continue-on-error: true
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Upload Build Files To Release
+              uses: softprops/action-gh-release@v2.2.1
+              with:
+                  files: dist-zip/extensions-manager.zip
+                  draft: false
